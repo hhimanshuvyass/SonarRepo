@@ -1,0 +1,5 @@
+projectKey=sonar:com.sonar.maven
+serverUrl=http://10.11.30.111:9000
+dashboardUrl=http://10.11.30.111:9000/dashboard/index/sonar:com.sonar.maven
+ceTaskId=AV6kxZQeTD8Us418MJIU
+ceTaskUrl=http://10.11.30.111:9000/api/ce/task?id=AV6kxZQeTD8Us418MJIU
