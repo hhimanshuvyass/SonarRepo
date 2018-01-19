@@ -1,6 +1,10 @@
 <project name="IIB-CI-MAIN" default="dev" basedir="..">
   <description>IIB Continuous Integration Demo (main script)</description>
-
+<target name="print-version"> 
+   <echo>Java/JVM version: ${ant.java.version}</echo> 
+   <echo>Java/JVM detail version: ${java.version}</echo> 
+</target>
+  
   <target name="init">
     <tstamp />
     <property environment="env" />
