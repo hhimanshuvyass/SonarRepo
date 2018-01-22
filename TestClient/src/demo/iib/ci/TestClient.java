@@ -26,7 +26,7 @@ public class TestClient {
 			System.out.println(e.getKey() + "=\"" + e.getValue() + "\"");
 		final String sPort = props.getProperty("http.port");
 		testHTTP(new URL("http://10.11.13.187:" + sPort + "/" + props.getProperty("http.esql.echo.url")), req);
-		testHTTP(new URL("http://10.11.13.187:" + sPort + "/" + props.getProperty("http.java.echo.url")), req);
+		//testHTTP(new URL("http://10.11.13.187:" + sPort + "/" + props.getProperty("http.java.echo.url")), req);
 	}
 	private static void testHTTP(final URL url, final String s) throws IOException {
 		System.out.println("-------- IIB HTTP test --------");
