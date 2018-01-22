@@ -76,7 +76,8 @@
     </exec>
 
     <exec executable="mqsideploy">
-      <arg value="${iib.node}" />
+      <arg value="-n" />
+      <arg value="${iib.brkfileloc}{iib.node}" />
       <arg value="-e" />
       <arg value="${iib.svr}" />
       <arg value="-a" />
