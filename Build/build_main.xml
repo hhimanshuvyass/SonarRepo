@@ -10,7 +10,7 @@
 
   <target name="dev" depends="init">
     <!-- clean workspace -->
-    <delete failonerror="false" verbose="true">
+    <!--delete failonerror="false" verbose="true">
       <fileset dir="." includes="**/*.bar" />
       <fileset dir="TestClient/bin" includes="**/*" />
       <fileset dir="TestClient" includes="**/*.jar" />
@@ -18,7 +18,7 @@
       <fileset dir="HTTPEchoLibJava" includes="**/*.jar" />
       <fileset dir="HTTPJavaEchoAppJava/bin" includes="**/*" />
       <fileset dir="HTTPJavaEchoAppJava" includes="**/*.jar" />
-    </delete>
+    </delete-->
 
     <exec executable="id" />
     <exec executable="mqsiservice">
@@ -35,13 +35,13 @@
       <arg value="${basedir}" />
       <arg value="-b" />
       <arg value="${iib.bar}" />
-      <arg value="-p" />
-      <arg value="TestClient" />
+      <!--arg value="-p" /-->
+      <!--arg value="TestClient" /-->
       <arg value="-a" />
-      <arg value="HTTPESQLEchoApp" />
-      <arg value="HTTPJavaEchoApp" />
-      <arg value="-l" />
-      <arg value="HTTPEchoLib" />
+      <arg value="NCL_PBC_TestApp" />
+      <!--arg value="HTTPJavaEchoApp" /-->
+      <!--arg value="-l" /-->
+      <!--arg value="HTTPEchoLib" /-->
       <arg value="-deployAsSource" />       <!-- we cannot inline artifacts in a shared library -->
     </exec>
 
