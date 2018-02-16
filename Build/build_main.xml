@@ -75,6 +75,14 @@
       <arg value="HTTPJavaEchoApp" />
     </exec>
  -->
+  	
+    <exec executable="mqsiapplybaroverride">
+      <arg value="-b" />
+      <arg value="${iib.bar}" />
+      <arg value="-p" />
+      <arg value="${iib.properties}/${iib.propfilename}" />
+    </exec>
+ 
     <exec executable="mqsideploy">
       <arg value="-n" />
       <arg value="${iib.brkfileloc}${iib.node}" />
