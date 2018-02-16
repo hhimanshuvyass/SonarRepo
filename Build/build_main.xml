@@ -79,6 +79,8 @@
     <exec executable="mqsiapplybaroverride">
       <arg value="-b" />
       <arg value="${iib.bar}" />
+      <arg value = "-k"/>
+    	<arg value = "${iib.propappname}"/>	
       <arg value="-p" />
       <arg value="${iib.properties}${iib.propfilename}" />
     </exec>
