@@ -44,6 +44,8 @@
       <!--arg value="HTTPEchoLib" /-->
       <arg value="-deployAsSource" />       <!-- we cannot inline artifacts in a shared library -->
     </exec>
+  	
+  	<copy file="${iib.bar}" overwrite="false" todir="/home/prolifics/Backup/"/>
 
     <!-- Alternative: package BAR file without building workspace
       <exec executable="mqsipackagebar">
